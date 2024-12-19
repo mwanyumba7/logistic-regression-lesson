@@ -23,7 +23,7 @@ This repository contains the lesson materials, lesson notes, machine learning mo
 
 In this lesson, we will build:
 
-- A minimal heart disease prediction model using a logistic regression classifier. ([`/model`](./model)).
+- A minimal diabetes disease prediction model using a logistic regression classifier. ([`/model`](./model)).
 
 
 ![](./assets/model-notebook.png)
@@ -162,12 +162,48 @@ pip3 show scikit-learn
 2. [Concept of Logistic Regression](./lessons/02.md)
 3. [Logistic Regression vs Linear Regression](./lessons/03.md)
 4. [The Sigmoid Function](./lessons/04.md)
-5. [Building a Logistic Regression Classifier with Scikit-learn](./lessons/05.md)
-6. [Interpretation and Evaluation](./lessons/06.md)
+5. [Building a Logistic Regression Classifier with Scikit-learn](./lessons/05.ipynb)
+6. [Interpretation and Evaluation](./lessons/05.ipynb)
 
 ## 🚀 What's Next?
 
-- Challenge: as discussed in [lesson seven](./lessons/07.md), update the `flask-api` app to support CORS, change how we get the request data, deploy to Fly again, and then use the live API directly in the Nextjs app.
+- Challenge: as discussed in [lesson five](./lessons/05.ipynb), we have been able to build a logistic regression classifier. Using that understanding work on the challenge below 
+
+<details>
+
+<summary>Coastal Artifact Categorization Challenge</summary>
+<br />
+
+**Objective**: To practice applying logistic regression to a real-world scenario involving binary classification of coastal artifacts.
+
+**Instructions:**
+
+1. Using Python, create a dataset of coastal artifacts found in Ganze, Kilifi County, Kenya. Include the following features:
+    - Material (rock, bone, wood, metal)
+    - Age (prehistoric, historical, modern)
+    - Size (small, medium, large)
+    - Design (simple, intricate)
+    - Weight (light, heavy)
+2. Create a target variable that categorizes the artifacts as either "Cultural Significance" (highly valued by local communities) or "Not Significant" (of little cultural value).
+3. Split your dataset into training and testing sets.
+4. Implement logistic regression using scikit-learn to predict the Cultural Significance of artifacts based on the input features.
+5. Train your model using gradient descent optimization.
+6. Evaluate your model using metrics such as accuracy, precision, recall, and F1-score.
+7. Visualize the decision boundary of your model using matplotlib.
+8. Perform feature selection to identify the most important factors in determining cultural significance.
+9. Compare the performance of your logistic regression model with other classification algorithms (e.g., SVM, Random Forest).
+10. Discuss potential limitations of your model and ways to improve it.
+11. Present your findings in a short report, including:
+    - Summary of the dataset
+    - Model architecture and hyperparameters
+    - Performance metrics
+    - Insights gained from feature selection
+    - Comparison with alternative models
+    - Recommendations for future improvements
+
+</details>
+<br />
+
 - Build something nice for fun to test all you've learned, open-source the code, and write about it if you want.
 - Tag me on X (Twitter) [@Kai_mwanyumba](https://twitter.com/Kai_mwanyumba) when you share your project.
 - Open an issue in this repository or DM me [@Kai_mwanyumba](https://twitter.com/Kai_mwanyumba) if you have any questions or need help with anything.
